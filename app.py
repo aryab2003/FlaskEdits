@@ -63,3 +63,7 @@ def edit():
             flash(f"File uploaded successfully and processed")
             return render_template("index.html", processed_image=new_filename)
     return render_template("index.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
